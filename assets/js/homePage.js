@@ -1,6 +1,7 @@
 //asign
 var searchBar = $("#bar");
 var searchBtn = $("#searchButton");
+var carouselControl = $("#carouselControl");
 
 // api
 //splash
@@ -12,7 +13,7 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 function searchLandmark(event) {
   event.preventDefault();
   var landmarkName = searchBar.val().trim();
-  fetch(`${splashApiLink}${landmarkName}&client_id=${splashApiKey}`)
+  fetch(`${splashApiLink}${landmarkName}&per_page=3&client_id=${splashApiKey}`)
     .then(function (response) {
       return response.json();
     })
@@ -23,7 +24,14 @@ function searchLandmark(event) {
 }
 
 //imput imgs into carousel
-//function makeCarousel(imgData) {}
+function makeCarousel(imgData) {
+  var imgList = data.description;
+  for (i = 0; i < imgList.length; i++) {
+    var landmarkNameInput = $("<h2>");
+    landmarkNameInput.text(data.description);
+    carouselControl.append(landmarkNameInput);
+  }
+}
 
 //search bar click function
 searchBtn.on("click", searchLandmark);
