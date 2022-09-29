@@ -1,7 +1,8 @@
 //asign
 var searchBar = $("#bar");
 var searchBtn = $("#searchButton");
-var carouselControl = $("#carouselControl");
+var title = $("#title");
+var imgContainer = $("#imgContainer");
 
 // api
 //splash
@@ -13,25 +14,35 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 function searchLandmark(event) {
   event.preventDefault();
   var landmarkName = searchBar.val().trim();
-  fetch(`${splashApiLink}${landmarkName}&per_page=3&client_id=${splashApiKey}`)
+  fetch(`${splashApiLink}${landmarkName}&per_page=5&client_id=${splashApiKey}`)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
-      makeCarousel(data);
+      var results = data.results;
+      makeCarousel(results);
     });
 }
 
 //imput imgs into carousel
 function makeCarousel(imgData) {
-  var imgList = data.description;
-  for (i = 0; i < imgList.length; i++) {
+  console.log(imgData);
+  for (i = 0; i < imgData.length; i++) {
+    //header description
     var landmarkNameInput = $("<h2>");
-    landmarkNameInput.text(data.description);
-    carouselControl.append(landmarkNameInput);
+    landmarkNameInput.text(imgData[i].alt_description);
+    title.append(landmarkNameInput);
+    //img input
+    var imgInput = $("<img>");
+    var imgLink = imgData[i].links.download;
+    imgInput.attr("src", imgLink);
+    imgContainer.append(imgInput);
+
+    //buttons
   }
 }
+
+//credit uploader
 
 //search bar click function
 searchBtn.on("click", searchLandmark);
