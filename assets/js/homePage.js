@@ -11,7 +11,10 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 //function to start once button clicked
 function searchLandmark() {
   var landmarkName = searchBar.val().trim();
-  fetch(splashApiLink + landmarkName + "client_id=" + splashApiKey);
+  fetch(splashApiLink + landmarkName + "client_id=" + splashApiKey)
+    .then(function(data){
+      console.log(data.url);
+    });
 }
 
 //search bar click function
