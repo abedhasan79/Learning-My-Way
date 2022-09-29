@@ -1,0 +1,32 @@
+img{
+    height: 600px;
+    width: 800px;
+}
+
+.youTubeVideos1{
+    margin-right: 2vh;
+}
+
+.youTubeVideos2{
+    margin-right: 2vh;
+}
+.youTubeVideos3{
+    margin-right: 2vh;
+}
+.youTubeVideos4{
+    margin-right: 2vh;
+}
+
+.carousel{
+    margin-top: 5vh;
+}
+
+figure{
+    border: 1px solid red;
+    margin-right: 2vh;
+    height: 20vh;
+}
+
+form button{
+    margin-right: 1vh;
+}
