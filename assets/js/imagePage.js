@@ -5,7 +5,7 @@
 // urlReqs2 ="https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=5&gsrsearch='New_England_Patriots'";
 // fetch(urlReqs2)
 //     .then(function(response){
-//         console.log(response); 
+//         console.log(response);
 //     })
 //     .then(function(data){
 //         console.log(data);
