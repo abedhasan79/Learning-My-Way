@@ -20,12 +20,10 @@
     <title>Learning My Way</title>
   </head>
   <body>
-    <!--HH-->
-    <!-- header -->
-    <!--NAV BAR-->
+    <!-- navbar/header-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Learning My Way</a>
+        <h1 class="navbar-brand">Learning My Way</h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,12 +52,14 @@
           </ul>
         </div>
       </nav>
+
       <!-- info -->
       <div id="infoBar">
         <h2>How it works</h2>
         <p>fdshuifdfgdsagv</p>
       </div>
     </header>
+
     <!-- search -->
     <main>
       <div id="searchbar">
@@ -67,23 +67,63 @@
         <input type="text" id="bar" class="" />
         <button id="searchButton">Search</button>
       </div>
+
       <!-- result carousel container -->
       <div id="carouselControl" class="carousel slide" data-bs-touch="false">
         <div id="imgContainer" class="carousel-inner"></div>
       </div>
     </main>
+
     <!-- nav links -->
     <!-- rec topic -->
     <aside id="sectionHeaders">
       <div id="headTopic" class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Receommended Topics</span>
       </div>
+
+      <!-- rec cards -->
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput" class="card-title">Tower</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput1" class="card-title">Dog</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn1" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput2" class="card-title">Music</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn2" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
       <!-- search history -->
       <div id="headHistory" class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Search History</span>
       </div>
+      <div id="historyContainer"></div>
     </aside>
-    <!-- HH -->
 
     <!-- AH -->
     <!-- yotube result -->
