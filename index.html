@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link bootstrap and css -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/homePage.css" />
-    <title>Landmarks My Way</title>
-  </head>
-  <body>
-    <!--HH-->
-    <!-- header -->
-    <!--NAV BAR-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Landmarks My Way</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- info -->
-      <div id="infoBar">
-        <h2>How it works</h2>
-        <p>fdshuifdfgdsagv</p>
-      </div>
-    </header>
-    <!-- search -->
-    <main>
-      <div id="searchbar">
-        <h3>Where do you want to go?</h3>
-        <input type="text" id="bar" class="" />
-        <button id="searchButton">Search</button>
-      </div>
-      <!-- result carousel container -->
-      <div id="carouselControl" class="carousel slide" data-bs-touch="false">
-        <div id="imgContainer" class="carousel-inner"></div>
-      </div>
-    </main>
-    <!-- HH -->
 
-    <!-- AH -->
-    <!-- yotube result -->
-    <!-- AH -->
-    <!-- adding bootstrap, jQ, and link js sheet -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/homePage.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link bootstrap and css -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/homePage.css" />
+  <title>Landmarks My Way</title>
+</head>
+
+<body>
+  <!--HH-->
+  <!-- header -->
+  <!--NAV BAR-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Landmarks My Way</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- info -->
+    <div id="infoBar">
+      <h2>How it works</h2>
+      <p>fdshuifdfgdsagv</p>
+    </div>
+  </header>
+  <!-- search -->
+  <main>
+    <div id="searchbar">
+      <h3>Where do you want to go?</h3>
+      <input type="text" id="bar" class="" />
+      <button id="searchButton">Search</button>
+    </div>
+    <!-- result carousel container -->
+    <div id="carouselControl" class="carousel slide" data-bs-touch="false">
+      <div id="imgContainer" class="carousel-inner"></div>
+    </div>
+  </main>
+  <!-- HH -->
+
+  <!-- AH -->
+  <!-- yotube result -->
+  <section class="youTubeVideos">
+    <div class="video-container">
+      <div class="container">
+        <div class="row d-flex justify-content-center flex-row">
+          <figure>
+            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos1"></iframe>
+          </figure>
+          <figure>
+            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos2"></iframe>
+          </figure>
+          <figure>
+            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos3"></iframe>
+          </figure>
+          <figure>
+            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos4"></iframe>
+          </figure>
+          <figure>
+            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos5"></iframe>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wikipedia">
+    <div class="wikiLink">
+      <h2 class="wikiHead"></h2>
+      <a href="" class="wiki"></a>
+    </div>
+  </section>
+  <!-- AH -->
+  <!-- adding bootstrap, jQ, and link js sheet -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/imagePage.js"></script>
+  <script src="assets/js/reviewPage.js"></script>
+  <script src="assets/js/homePage.js"></script>
+</body>
+
 </html>

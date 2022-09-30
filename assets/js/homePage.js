@@ -24,6 +24,9 @@ function searchLandmark(event) {
       var results = data.results;
       makeCarousel(results);
     });
+
+  // getYoutube(landmarkName);
+  getWikipedia(landmarkName);
 }
 
 //imput imgs into carousel
