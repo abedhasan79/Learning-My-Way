@@ -23,9 +23,10 @@
     <!--HH-->
     <!-- header -->
     <!--NAV BAR-->
-    <header>
+    <header class="jumbotron">
+      <h1 >Landmarks My Way</h1>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Landmarks My Way</a>
+       
         <button
           class="navbar-toggler"
           type="button"
@@ -70,10 +71,17 @@
     </header>
     <!-- search -->
     <main>
-      <div id="searchbar">
-        <h3>Where do you want to go?</h3>
-        <input type="text" id="bar" class="" />
-        <button id="searchButton">Search</button>
+      <div class="container">
+        <div class="row">
+          <div class="col" id="searchbar">
+            <div class="col">
+            <h3>Press Shearch to learn more</h3>
+            <input type="text" id="bar" class="" />
+            </div>
+            <div class="col">
+            <button class="button is-medium  is-info"> search</button>
+          </div>
+          </div>
       </div>
       <!-- result carousel container -->
       <div id="carouselControl" class="carousel slide" data-bs-touch="false">

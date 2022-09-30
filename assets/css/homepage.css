@@ -1,3 +1,74 @@
+:root {
+    --blue: #0c3559;
+    --darkblue: #092640;
+    --seablue: #687b8c;
+    --lightseablue: #aab9bf;
+    --light: #f2f2f2;
+  }
+  .jumbotron {
+    background-image: linear-gradient(to right, #687b8c ,  #0c3559);
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+ 
+  h1{
+
+    padding:20px;
+    margin: 20px;
+    text-align: center;  
+    color: var(--light) ;  
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  div{
+    align-items: center;
+    padding:10px;
+    margin: 10px;
+    justify-content: center;
+    background-color: #aab9bf;
+  }
+  
+   .custom-navbar {
+    background-image: none;
+    background-color: var(--darkblue);
+  }
+  
+  .custom-navbar a {
+    background-image: none;
+    font-size: 1.5rem;
+    color: var(--lightseablue);
+  }
+  
+  .custom-navbar a:hover {
+    color: var(--light);
+  }
+  
+  .custom-jumbotron {
+    background-image: none;
+    background-color: var(--seablue);
+    color: var(--darkblue);
+  }
+  
+  .custom-btn {
+    background-image: none;
+    background-color: var(--light);
+    color: var(--blue);
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--darkblue);
+    color: var(--light);
+  } 
+
 #carouselControl {
+    align-items: center;
     max-width: 50%;
+} 
+.container{
+    height: 50px;
+    text-align: center;
+    align-items: center;
 }
