@@ -1,72 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link bootstrap and css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/homePage.css" />
+    <link rel="stylesheet" href="assets/css/imagePage.css" />
+    <link rel="stylesheet" href="assets/css/reviewPage.css" />
+    <title>Learning My Way</title>
+  </head>
+  <body>
+    <!-- navbar/header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="navbar-brand">Learning My Way</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- home/refresh -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <!-- recc topics -->
+            <li class="nav-item">
+              <a class="nav-link" href="#headTopic">Recommended Topics</a>
+            </li>
+            <!-- search history -->
+            <li class="nav-item">
+              <a class="nav-link" href="#headHistory">Search History</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- link bootstrap and css -->
-  <link rel="stylesheet" href="assets/css/reset.css" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-  <link rel="stylesheet" href="assets/css/homePage.css" />
-  <link rel="stylesheet" href="assets/css/imagePage.css" />
-  <link rel="stylesheet" href="assets/css/reviewPage.css" />
-  <title>Landmarks My Way</title>
-</head>
-
-<body>
-  <!--HH-->
-  <!-- header -->
-  <!--NAV BAR-->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Landmarks My Way</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+      <!-- info -->
+      <div id="infoBar">
+        <h2>How it works</h2>
+        <p>fdshuifdfgdsagv</p>
       </div>
-    </nav>
-    <!-- info -->
-    <div id="infoBar">
-      <h2>How it works</h2>
-      <p>fdshuifdfgdsagv</p>
-    </div>
-  </header>
-  <!-- search -->
-  <main>
-    <div id="searchbar">
-      <h3>Where do you want to go?</h3>
-      <input type="text" id="bar" class="" />
-      <button id="searchButton">Search</button>
-    </div>
-    <!-- result carousel container -->
-    <div id="carouselControl" class="carousel slide" data-bs-touch="false">
-      <div id="imgContainer" class="carousel-inner"></div>
-    </div>
-  </main>
-  <!-- HH -->
+    </header>
 
-  <!-- AH -->
+    <!-- search -->
+    <main>
+      <div id="searchbar">
+        <h3>Where do you want to go?</h3>
+        <input type="text" id="bar" class="" />
+        <button id="searchButton">Search</button>
+      </div>
+
+      <!-- result carousel container -->
+      <div id="carouselControl" class="carousel slide" data-bs-touch="false">
+        <div id="imgContainer" class="carousel-inner"></div>
+      </div>
+    </main>
+
+    <!-- nav links -->
+    <!-- rec topic -->
+    <aside id="sectionHeaders">
+      <div id="headTopic" class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Receommended Topics</span>
+      </div>
+
+      <!-- rec cards -->
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput" class="card-title">Tower</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput1" class="card-title">Dog</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn1" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput2" class="card-title">Music</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button id="recBtn2" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <!-- search history -->
+      <div id="headHistory" class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Search History</span>
+      </div>
+      <div id="historyContainer"></div>
+    </aside>
+
+
   <!-- yotube result -->
   <section class="youTubeVideos">
     <div class="video-container">
@@ -107,5 +161,6 @@
   <script src="assets/js/reviewPage.js"></script>
   <script src="assets/js/homePage.js"></script>
 </body>
+
 
 </html>

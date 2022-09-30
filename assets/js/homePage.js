@@ -4,6 +4,12 @@ var searchBtn = $("#searchButton");
 var title = $("#title");
 var imgContainer = $("#imgContainer");
 var carouselControl = $("#carouselControl");
+var recBtn = $("#recBtn");
+var cardInput = $("#cardInput");
+var recBtn1 = $("#recBtn1");
+var cardInput1 = $("#cardInput1");
+var recBtn2 = $("#recBtn2");
+var cardInput2 = $("#cardInput2");
 
 // api
 //splash
@@ -13,6 +19,7 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 
 //function to start once button clicked
 function searchLandmark(event) {
+  imgContainer.children().remove();
   event.preventDefault();
   var landmarkName = searchBar.val().trim();
 
@@ -27,6 +34,54 @@ function searchLandmark(event) {
 
   // getYoutube(landmarkName);
   getWikipedia(landmarkName);
+}
+
+function searchCard(event) {
+  imgContainer.children().remove();
+  event.preventDefault();
+  var cardName = cardInput.text();
+  console.log(cardName);
+
+  fetch(`${splashApiLink}${cardName}&per_page=5&client_id=${splashApiKey}`)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var results = data.results;
+      makeCarousel(results);
+    });
+}
+
+function searchCard1(event) {
+  imgContainer.children().remove();
+  event.preventDefault();
+  var cardName1 = cardInput1.text();
+  console.log(cardName1);
+
+  fetch(`${splashApiLink}${cardName1}&per_page=5&client_id=${splashApiKey}`)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var results = data.results;
+      makeCarousel(results);
+    });
+}
+
+function searchCard2(event) {
+  imgContainer.children().remove();
+  event.preventDefault();
+  var cardName2 = cardInput2.text();
+  console.log(cardName2);
+
+  fetch(`${splashApiLink}${cardName2}&per_page=5&client_id=${splashApiKey}`)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var results = data.results;
+      makeCarousel(results);
+    });
 }
 
 //imput imgs into carousel
@@ -84,3 +139,6 @@ function makeCarousel(imgData) {
 
 //search bar click function
 searchBtn.on("click", searchLandmark);
+recBtn.on("click", searchCard);
+recBtn1.on("click", searchCard1);
+recBtn2.on("click", searchCard2);
