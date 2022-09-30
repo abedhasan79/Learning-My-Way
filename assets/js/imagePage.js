@@ -30,7 +30,7 @@ function makeSearchList(input) {
 }
 
 function createSearchList(input) {
-    searchList.append($('<li>').addClass('p-3 btn btn-primary btn-sm btn-block btnBorder serchListCreated').text(input));
+    searchList.append($('<li>').addClass('p-3 btn btn-primary btn-lg serchListCreated button is-info').text(input));
 }
 
 function saveSearchListInStorage() {
