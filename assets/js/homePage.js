@@ -31,6 +31,9 @@ function searchLandmark(event) {
       var results = data.results;
       makeCarousel(results);
     });
+
+  // getYoutube(landmarkName);
+  getWikipedia(landmarkName);
 }
 
 function searchCard(event) {
