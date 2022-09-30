@@ -55,7 +55,7 @@
     <div id="searchbar">
       <h3>Where do you want to go?</h3>
       <input type="text" id="bar" class="" />
-      <button id="searchButton">Search</button>
+      <button id="searchButton" class="btn btn-primary button is-primary">Search</button>
     </div>
 
     <!-- result carousel container -->
@@ -90,69 +90,63 @@
 
     <section class="wikipedia">
       <div class="wikiLink">
-        <a href="" class="wiki"><h2 class="wikiHead"></h2></a>
+        <a href="" class="wiki">
+          <h2 class="wikiHead"></h2>
+        </a>
       </div>
     </section>
   </main>
 
   <!-- nav links -->
   <!-- rec topic -->
-  <aside id="sectionHeaders">
-    <div id="headTopic" class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">Receommended Topics</span>
+  <section id="sectionHeaders">
+    <div id="headTopic" class="navbar-dark bg-dark">
+      <h2 class="mb-0 h1">Receommended Topics</h2>
     </div>
+    <div class="row container-fluid d-flex justify-content-center cards">
+      <!-- rec cards -->
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput" class="card-title">Tower</h5>
+          <button id="recBtn" class="btn btn-primary button is-primary">Search</button>
+        </div>
+      </div>
 
-    <!-- rec cards -->
-    <div class="card" style="width: 18rem">
-      <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 id="cardInput" class="card-title">Tower</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <button id="recBtn" class="btn btn-primary">Search</button>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput1" class="card-title">Dog</h5>
+          <button id="recBtn1" class="btn btn-primary button is-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="cardInput2" class="card-title">Music</h5>
+          <button id="recBtn2" class="btn btn-primary button is-primary">Search</button>
+        </div>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem">
-      <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 id="cardInput1" class="card-title">Dog</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <button id="recBtn1" class="btn btn-primary">Search</button>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-      <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 id="cardInput2" class="card-title">Music</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <button id="recBtn2" class="btn btn-primary">Search</button>
-      </div>
-    </div>
-  </aside>
+  </section>
 
   <section id="historyContainer">
     <!-- search history -->
-    <div id="headHistory" class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">Search History</span>
+    <div id="headHistory" class="navbar-dark bg-dark">
+      <h2 class="mb-0 h1">Search History</h2>
     </div>
-    <div >
+    <div>
       <ul class="searchList">
 
       </ul>
     </div>
   </section>
 
-
+  <footer>
+    <h2>&copy; 2022. Made with &#10084; by Hannah Hughes, Safa Zgolli and Abed Hasan</h2>
+  </footer>
   <!-- yotube result -->
 
   <!-- AH -->

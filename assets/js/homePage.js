@@ -135,7 +135,7 @@ function makeCarousel(imgData) {
     } else {
       imgDiv.addClass("carousel-item");
     }
-    imgInput.addClass("d-block w-100");
+    imgInput.addClass("d-block w-100 images");
     imgInput.attr("src", imgLink);
     imgDiv.append(imgInput);
     imgContainer.append(imgDiv);
