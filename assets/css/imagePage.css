@@ -30,3 +30,24 @@ figure{
 form button{
     margin-right: 1vh;
 }
+
+.video-container{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 2vh;
+}
+
+.wikiLink{
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: 10vh;
+}
+
+.wikImgLink{
+    height: 20vh;
+    width: 20vh;
+}
