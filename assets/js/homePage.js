@@ -15,6 +15,7 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 function searchLandmark(event) {
   event.preventDefault();
   var landmarkName = searchBar.val().trim();
+
   fetch(`${splashApiLink}${landmarkName}&per_page=5&client_id=${splashApiKey}`)
     .then(function (response) {
       return response.json();
