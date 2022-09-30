@@ -29,15 +29,20 @@ function makeCarousel(imgData) {
   console.log(imgData);
   for (i = 0; i < imgData.length; i++) {
     //header description
-    var landmarkNameInput = $("<h2>");
-    landmarkNameInput.text(imgData[i].alt_description);
-    title.append(landmarkNameInput);
-    //img input
+    var titleDiv = $("<div>");
+    var titleInput = $("<h3>");
+    titleInput.text(imgData[i].alt_description);
+    titleDiv.append(titleInput);
+    imgContainer.append(titleDiv);
+    //img input 1
+    var imgDiv = $("<div>");
     var imgInput = $("<img>");
-    var imgLink = imgData[i].links.download;
+    var imgLink = imgData[i].urls.full;
+    imgDiv.addClass("carousel-item active");
+    imgInput.addClass("d-block w-100");
     imgInput.attr("src", imgLink);
-    imgContainer.append(imgInput);
-
+    imgDiv.append(imgInput);
+    imgContainer.append(imgDiv);
     //buttons
   }
 }
