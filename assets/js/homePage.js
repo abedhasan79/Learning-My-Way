@@ -19,8 +19,12 @@ var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 
 //function to start once button clicked
 function searchLandmark(event) {
-  imgContainer.children().remove();
   event.preventDefault();
+  //onclick hide the recommended lsit
+  // $("#sectionHeaders").css('display','none');
+  /////
+  imgContainer.children().remove();
+  
   var landmarkName = searchBar.val().trim();
 
   fetch(`${splashApiLink}${landmarkName}&per_page=5&client_id=${splashApiKey}`)
@@ -33,12 +37,19 @@ function searchLandmark(event) {
     });
 
   // getYoutube(landmarkName);
+  $('figure').css('display','block');
   getWikipedia(landmarkName);
+  //////////////
+  //caliing local storage to save
+  makeSearchList(landmarkName);
+  createSearchList(landmarkName);
+  saveSearchListInStorage(landmarkName);
 }
 
 function searchCard(event) {
-  imgContainer.children().remove();
   event.preventDefault();
+  imgContainer.children().remove();
+  // $("#sectionHeaders").css('display','none');
   var cardName = cardInput.text();
   console.log(cardName);
 
@@ -50,11 +61,17 @@ function searchCard(event) {
       var results = data.results;
       makeCarousel(results);
     });
+
+  // getYoutube(cardName);
+  $('figure').css('display','block');
+  getWikipedia(cardName);
 }
 
 function searchCard1(event) {
-  imgContainer.children().remove();
   event.preventDefault();
+  imgContainer.children().remove();
+  // $("#sectionHeaders").css('display','none');
+  
   var cardName1 = cardInput1.text();
   console.log(cardName1);
 
@@ -66,11 +83,16 @@ function searchCard1(event) {
       var results = data.results;
       makeCarousel(results);
     });
+
+  // getYoutube(cardName1);
+  $('figure').css('display','block');
+  getWikipedia(cardName1);
 }
 
 function searchCard2(event) {
-  imgContainer.children().remove();
   event.preventDefault();
+  imgContainer.children().remove();
+  // $("#sectionHeaders").css('display','none');
   var cardName2 = cardInput2.text();
   console.log(cardName2);
 
@@ -82,6 +104,10 @@ function searchCard2(event) {
       var results = data.results;
       makeCarousel(results);
     });
+
+  // getYoutube(cardName2);
+  $('figure').css('display','block');
+  getWikipedia(cardName2);
 }
 
 //imput imgs into carousel

@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link bootstrap and css -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="assets/css/homePage.css" />
-    <link rel="stylesheet" href="assets/css/imagePage.css" />
-    <link rel="stylesheet" href="assets/css/reviewPage.css" />
-    <title>Learning My Way</title>
-  </head>
-  <body>
-    <!-- navbar/header-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <h1 class="navbar-brand">Learning My Way</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <!-- home/refresh -->
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
-            </li>
-            <!-- recc topics -->
-            <li class="nav-item">
-              <a class="nav-link" href="#headTopic">Recommended Topics</a>
-            </li>
-            <!-- search history -->
-            <li class="nav-item">
-              <a class="nav-link" href="#headHistory">Search History</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-      <!-- info -->
-      <div id="infoBar">
-        <h2>How it works</h2>
-        <p>fdshuifdfgdsagv</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link bootstrap and css -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="assets/css/homePage.css" />
+  <link rel="stylesheet" href="assets/css/imagePage.css" />
+  <link rel="stylesheet" href="assets/css/reviewPage.css" />
+  <title>Learning My Way</title>
+</head>
+
+<body>
+  <!-- navbar/header-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h1 class="navbar-brand">Learning My Way</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- home/refresh -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <!-- recc topics -->
+          <li class="nav-item">
+            <a class="nav-link" href="#headTopic">Recommended Topics</a>
+          </li>
+          <!-- search history -->
+          <li class="nav-item">
+            <a class="nav-link" href="#headHistory">Search History</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
-    <!-- search -->
-    <main>
-      <div id="searchbar">
-        <h3>Where do you want to go?</h3>
-        <input type="text" id="bar" class="" />
-        <button id="searchButton">Search</button>
-      </div>
+    <!-- info -->
+    <div id="infoBar">
+      <h2>How it works</h2>
+      <p>fdshuifdfgdsagv</p>
+    </div>
+  </header>
 
-      <!-- result carousel container -->
-      <div id="carouselControl" class="carousel slide" data-bs-touch="false">
-        <div id="imgContainer" class="carousel-inner"></div>
-      </div>
-    </main>
+  <!-- search -->
+  <main>
+    <div id="searchbar">
+      <h3>Where do you want to go?</h3>
+      <input type="text" id="bar" class="" />
+      <button id="searchButton">Search</button>
+    </div>
 
-    <!-- nav links -->
-    <!-- rec topic -->
-    <aside id="sectionHeaders">
-      <div id="headTopic" class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Receommended Topics</span>
-      </div>
+    <!-- result carousel container -->
+    <div id="carouselControl" class="carousel slide" data-bs-touch="false">
+      <div id="imgContainer" class="carousel-inner"></div>
+    </div>
 
-      <!-- rec cards -->
-      <div class="card" style="width: 18rem">
-        <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 id="cardInput" class="card-title">Tower</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <button id="recBtn" class="btn btn-primary">Search</button>
+    <section class="youTubeVideos">
+      <div class="video-container">
+        <div class="container">
+          <div class="row d-flex justify-content-center flex-row">
+            <figure>
+              <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen
+                class="youTubeVideos1"></iframe>
+            </figure>
+            <figure>
+              <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen
+                class="youTubeVideos2"></iframe>
+            </figure>
+            <figure>
+              <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen
+                class="youTubeVideos3"></iframe>
+            </figure>
+            <figure>
+              <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen
+                class="youTubeVideos4"></iframe>
+            </figure>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card" style="width: 18rem">
-        <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 id="cardInput1" class="card-title">Dog</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <button id="recBtn1" class="btn btn-primary">Search</button>
-        </div>
+    <section class="wikipedia">
+      <div class="wikiLink">
+        <a href="" class="wiki"><h2 class="wikiHead"></h2></a>
       </div>
+    </section>
+  </main>
 
-      <div class="card" style="width: 18rem">
-        <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 id="cardInput2" class="card-title">Music</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <button id="recBtn2" class="btn btn-primary">Search</button>
-        </div>
-      </div>
+  <!-- nav links -->
+  <!-- rec topic -->
+  <aside id="sectionHeaders">
+    <div id="headTopic" class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Receommended Topics</span>
+    </div>
 
-      <!-- search history -->
-      <div id="headHistory" class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Search History</span>
+    <!-- rec cards -->
+    <div class="card" style="width: 18rem">
+      <img src="./assets/imgs/towerpic.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 id="cardInput" class="card-title">Tower</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <button id="recBtn" class="btn btn-primary">Search</button>
       </div>
-      <div id="historyContainer"></div>
-    </aside>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./assets/imgs/dogpic.webp" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 id="cardInput1" class="card-title">Dog</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <button id="recBtn1" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./assets/imgs/musicpic.webp" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 id="cardInput2" class="card-title">Music</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <button id="recBtn2" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </aside>
+
+  <section id="historyContainer">
+    <!-- search history -->
+    <div id="headHistory" class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Search History</span>
+    </div>
+    <div >
+      <ul class="searchList">
+
+      </ul>
+    </div>
+  </section>
 
 
   <!-- yotube result -->
-  <section class="youTubeVideos">
-    <div class="video-container">
-      <div class="container">
-        <div class="row d-flex justify-content-center flex-row">
-          <figure>
-            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos1"></iframe>
-          </figure>
-          <figure>
-            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos2"></iframe>
-          </figure>
-          <figure>
-            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos3"></iframe>
-          </figure>
-          <figure>
-            <iframe src="" title="YouTube video player" frameborder="0" allowfullscreen class="youTubeVideos4"></iframe>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="wikipedia">
-    <div class="wikiLink">
-      <h2 class="wikiHead"></h2>
-      <a href="" class="wiki"></a>
-    </div>
-  </section>
   <!-- AH -->
   <!-- adding bootstrap, jQ, and link js sheet -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -156,7 +162,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-  
+
   <script src="assets/js/imagePage.js"></script>
   <script src="assets/js/reviewPage.js"></script>
   <script src="assets/js/homePage.js"></script>
