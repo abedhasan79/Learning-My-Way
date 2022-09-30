@@ -17,15 +17,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/homePage.css" />
-    <title>Landmarks My Way</title>
+    <title>Learning My Way</title>
   </head>
   <body>
     <!--HH-->
     <!-- header -->
     <!--NAV BAR-->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Landmarks My Way</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Learning My Way</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,25 +39,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <!-- home/refresh -->
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="#">Home </a>
             </li>
+            <!-- recc topics -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#headTopic">Recommended Topics</a>
             </li>
+            <!-- search history -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#headHistory">Search History</a>
             </li>
           </ul>
         </div>
@@ -80,6 +72,17 @@
         <div id="imgContainer" class="carousel-inner"></div>
       </div>
     </main>
+    <!-- nav links -->
+    <!-- rec topic -->
+    <aside id="sectionHeaders">
+      <div id="headTopic" class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Receommended Topics</span>
+      </div>
+      <!-- search history -->
+      <div id="headHistory" class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Search History</span>
+      </div>
+    </aside>
     <!-- HH -->
 
     <!-- AH -->
