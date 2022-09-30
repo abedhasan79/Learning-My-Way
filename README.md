@@ -2,13 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 Learning My Way is a web application that can access any topic and pull up images, wiki info, and even videos. Being able to grab all these rescourses on anything you can think of can be helpful in many ways. This is because it allows the user to find useful information quicly, understand what they are loking for witha variety of images and get a feel for location, tutorials and more through youtube links. To complete this web application we used three API's; unsplash for imgs, youtube for videos, and wiki for any info you could need! A variety of web css was used, vanilia, bootstrap and bulma. Throughout this project, we got to learn and implement new pieces and got to further our ability to work within teams. Our motivation was to see if we could succesffuly implement these new tools and create a functional and efficiant web application.This app will solve issues for the regular curious cat, a student furthering their knowledge, or even a wise old man trying to learn something fresh!
 
 ## Installation
