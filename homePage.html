@@ -5,31 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link bootstrap and css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/homePage.css" />
     <title>Landmarks My Way</title>
   </head>
   <body>
+    <!--HH-->
     <!-- header -->
+    <!--NAV BAR-->
     <header>
-      <h1>Landmarks My Way</h1>
-      <h2>How it works</h2>
-      <p>fdshuifdfgdsagv</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Landmarks My Way</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- info -->
+      <div id="infoBar">
+        <h2>How it works</h2>
+        <p>fdshuifdfgdsagv</p>
+      </div>
     </header>
-
     <!-- search -->
-    <div id="searchbar">
-      <h3>Where do you want to go?</h3>
-      <input type="text" id="bar" class="" />
-      <button id="searchButton">Search</button>
-    </div>
+    <main>
+      <div id="searchbar">
+        <h3>Where do you want to go?</h3>
+        <input type="text" id="bar" class="" />
+        <button id="searchButton">Search</button>
+      </div>
+      <!-- result carousel container -->
+      <div id="carouselControl" class="carousel slide" data-bs-touch="false">
+        <div id="imgContainer" class="carousel-inner"></div>
+      </div>
+    </main>
+    <!-- HH -->
 
+    <!-- AH -->
+    <!-- yotube result -->
+    <!-- AH -->
     <!-- adding bootstrap, jQ, and link js sheet -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
