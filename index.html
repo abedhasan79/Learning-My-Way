@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- navbar/header-->
-    <header>
+    <header class="jumbotron">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <h1 class="navbar-brand">Learning My Way</h1>
         <button
@@ -70,11 +70,17 @@
 
     <!-- search -->
     <main>
-      <div id="searchbar">
+      
+      <div class="row btn-grid" id="searchbar">
+        <div class="col">
         <h3>Where do you want to go?</h3>
-        <input type="text" id="bar" class="" />
-        <button id="searchButton">Search</button>
+        <input type="text" id="bar" class="input is-large input is-focused" />
+        </div>
+        <div class="col">
+        <button id="searchButton" class= "btn-info btn-grid button is-fullwidth">Search</button>
       </div>
+      </div>
+    
 
       <!-- result carousel container -->
       <div id="carouselControl" class="carousel slide" data-bs-touch="false">
@@ -84,7 +90,7 @@
 
     <!-- nav links -->
     <!-- rec topic -->
-    <aside id="sectionHeaders">
+    <aside id="sectionHeaders" class="btn-grid">
       <div id="headTopic" class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Receommended Topics</span>
       </div>
