@@ -10,7 +10,7 @@ function getWikipedia(input) {
     })
     .then(function (data) {
       console.log(data);
-      $('.wikiHead').text("Learn More About " + input + " on Wikipedia");
+      $('.wikiHead').text("Click Here To Learn More About " + input + " on Wikipedia");
       $('.wiki').attr('href', data[3][0]);
     });
 }
