@@ -1,3 +1,50 @@
+/* Done by Hannah H. */
+
+:root {
+  --blue: #0c3559;
+  --darkblue: #092640;
+  --seablue: #687b8c;
+  --lightseablue: #aab9bf;
+  --light: #f2f2f2;
+}
+
+figure {
+  border: 1px solid red;
+  display: none;
+}
+body{
+  background-color: var(--lightseablue);
+}
+header{
+  background-color: var(--lightseablue);
+}
+#navbarNav {
+  justify-content: end;
+}
+
+#infoBar {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+#searchbar{
+  text-align: center;
+  background-color: var(--seablue);
+  margin-bottom: 5vh;
+  padding-bottom: 5vh;
+}
+
+#bar{
+  margin-top: 2vh;
+}
+
+#headTopic h2{
+  text-align:  center;
+  color: white;
+}
+
+
 /* :root {
     --blue: #0c3559;
     --darkblue: #092640;
