@@ -1,0 +1,45 @@
+/* Done by Safa Z. */
+.wikipedia{
+    margin-bottom: 10vh;
+}
+.wikipedia a{
+    text-align: center;
+}
+
+footer{
+    margin-top: 15vh;
+    background-color: var(--seablue);
+}
+footer h2{
+    font-size: 1vh;
+    text-align: center;
+}
+
+.carousel-control-next{
+    background:none;
+    border: none;
+}
+
+.carousel-control-prev{
+    background:none;
+    border: none;
+}
+.carousel-control-prev-icon{
+    height: 50vh;
+    width: 50vh;
+}
+.carousel-control-next-icon{
+    height: 50vh;
+    width: 50vh;
+}
+.images{
+    height: 800px;
+    margin-bottom: 10vh;
+}
+
+#imgContainer h3{
+    text-align: center;
+}
+#imgContainer h4{
+    text-align: center;
+}

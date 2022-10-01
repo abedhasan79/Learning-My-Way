@@ -1,3 +1,5 @@
+//Done By Hannah H.
+
 //asign
 var searchBar = $("#bar");
 var searchBtn = $("#searchButton");
@@ -24,7 +26,8 @@ function searchLandmark(event) {
   // $("#sectionHeaders").css('display','none');
   /////
   imgContainer.children().remove();
-
+  
+  //Done By Hannah H. And Abed H.
   var landmarkName = searchBar.val().trim();
   let urlReqs2 = "https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=" + landmarkName + "&limit=5&namespace=0&format=json";
   fetch(urlReqs2)

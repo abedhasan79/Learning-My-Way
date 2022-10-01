@@ -1,47 +1,4 @@
-:root {
-    --blue: #0c3559;
-    --darkblue: #092640;
-    --seablue: #687b8c;
-    --lightseablue: #aab9bf;
-    --light: #f2f2f2;
-}
-
-figure {
-    border: 1px solid red;
-    display: none;
-}
-body{
-    background-color: var(--lightseablue);
-}
-header{
-    background-color: var(--lightseablue);
-}
-#navbarNav {
-    justify-content: end;
-}
-
-#infoBar {
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-#searchbar{
-    text-align: center;
-    background-color: var(--seablue);
-    margin-bottom: 5vh;
-    padding-bottom: 5vh;
-}
-
-#bar{
-    margin-top: 2vh;
-}
-
-#headTopic h2{
-    text-align:  center;
-    color: white;
-}
-
+/* done by Abed H. */
 
 .card{
     margin-top: 5vh;
@@ -71,35 +28,6 @@ ul li{
 }
 
 
-.carousel-control-next{
-    background:none;
-    border: none;
-}
-
-.carousel-control-prev{
-    background:none;
-    border: none;
-}
-.carousel-control-prev-icon{
-    height: 50vh;
-    width: 50vh;
-}
-.carousel-control-next-icon{
-    height: 50vh;
-    width: 50vh;
-}
-.images{
-    height: 800px;
-    margin-bottom: 10vh;
-}
-
-#imgContainer h3{
-    text-align: center;
-}
-#imgContainer h4{
-    text-align: center;
-}
-
 figure{
     margin-right: 2vh;
     margin-left: 2vh;
@@ -107,22 +35,6 @@ figure{
 
 .youTubeVideos{
     margin-bottom: 10vh;
-}
-
-.wikipedia{
-    margin-bottom: 10vh;
-}
-.wikipedia a{
-    text-align: center;
-}
-
-footer{
-    margin-top: 15vh;
-    background-color: var(--seablue);
-}
-footer h2{
-    font-size: 1vh;
-    text-align: center;
 }
 
 .error-msg{
