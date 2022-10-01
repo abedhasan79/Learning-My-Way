@@ -24,26 +24,41 @@ function searchLandmark(event) {
   // $("#sectionHeaders").css('display','none');
   /////
   imgContainer.children().remove();
-  
-  var landmarkName = searchBar.val().trim();
 
-  fetch(`${splashApiLink}${landmarkName}&per_page=5&client_id=${splashApiKey}`)
+  var landmarkName = searchBar.val().trim();
+  let urlReqs2 = "https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=" + landmarkName + "&limit=5&namespace=0&format=json";
+  fetch(urlReqs2)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      var results = data.results;
-      makeCarousel(results);
+      console.log(data);
+      if (data.length !== 0 && landmarkName !== "") {
+        $('.error-msg').css('display','none');
+        fetch(`${splashApiLink}${landmarkName}&per_page=5&client_id=${splashApiKey}`)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data)
+            var results = data.results;
+            makeCarousel(results);
+          });
+
+        // getYoutube(landmarkName);
+        $('figure').css('display', 'block');
+        getWikipedia(landmarkName);
+        //////////////
+        //caliing local storage to save
+        makeSearchList(landmarkName);
+        createSearchList(landmarkName);
+        saveSearchListInStorage(landmarkName);
+      } else {
+        $('.error-msg').css('display','block');
+      }
+
     });
 
-  // getYoutube(landmarkName);
-  $('figure').css('display','block');
-  getWikipedia(landmarkName);
-  //////////////
-  //caliing local storage to save
-  makeSearchList(landmarkName);
-  createSearchList(landmarkName);
-  saveSearchListInStorage(landmarkName);
 }
 
 function searchCard(event) {
@@ -63,7 +78,7 @@ function searchCard(event) {
     });
 
   // getYoutube(cardName);
-  $('figure').css('display','block');
+  $('figure').css('display', 'block');
   getWikipedia(cardName);
 }
 
@@ -71,7 +86,7 @@ function searchCard1(event) {
   event.preventDefault();
   imgContainer.children().remove();
   // $("#sectionHeaders").css('display','none');
-  
+
   var cardName1 = cardInput1.text();
   console.log(cardName1);
 
@@ -85,7 +100,7 @@ function searchCard1(event) {
     });
 
   // getYoutube(cardName1);
-  $('figure').css('display','block');
+  $('figure').css('display', 'block');
   getWikipedia(cardName1);
 }
 
@@ -106,7 +121,7 @@ function searchCard2(event) {
     });
 
   // getYoutube(cardName2);
-  $('figure').css('display','block');
+  $('figure').css('display', 'block');
   getWikipedia(cardName2);
 }
 

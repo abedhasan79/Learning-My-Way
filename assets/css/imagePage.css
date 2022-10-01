@@ -124,3 +124,9 @@ footer h2{
     font-size: 1vh;
     text-align: center;
 }
+
+.error-msg{
+    color: rgb(95, 12, 12);
+    margin-top: 5vh;
+    display: none;
+}
