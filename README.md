@@ -6,26 +6,23 @@ Learning My Way is a web application that can access any topic and pull up image
 
 ## Installation
 
-No installation requiried, just visit the link:
+No installation requiried, just visit the Application link
 
-https://abedhasan79.github.io/Landmark-Myway/
+## Application Link
+https://abedhasan79.github.io/Learning-My-Way/
 
-## Usage
+## Screenshot of Application
+![Screenshot 2022-10-01 112842](https://user-images.githubusercontent.com/106339494/193416672-6a3785e7-fd50-490a-87bb-e0fda9cfcbb2.png)
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
-Github repo: https://github.com/abedhasan79/Landmark-Myway
+- Github repo: https://github.com/abedhasan79/Learning-My-Way
 
-Colaburators:
-Hannahh: https://github.com/hannahhue
-Safa: https://github.com/safazgolli
-Abed: https://github.com/abedhasan79
+- Colaburators:
+- Hannahh: https://github.com/hannahhue
+- Safa: https://github.com/safazgolli
+- Abed: https://github.com/abedhasan79
 
 ## License
 

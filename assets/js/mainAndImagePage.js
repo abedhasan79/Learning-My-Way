@@ -26,7 +26,7 @@ function searchLandmark(event) {
   // $("#sectionHeaders").css('display','none');
   /////
   imgContainer.children().remove();
-  
+
   //Done By Hannah H. And Abed H.
   var landmarkName = searchBar.val().trim();
   let urlReqs2 = "https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=" + landmarkName + "&limit=5&namespace=0&format=json";
@@ -48,7 +48,7 @@ function searchLandmark(event) {
             makeCarousel(results);
           });
 
-        // getYoutube(landmarkName);
+        getYoutube(landmarkName);
         $('figure').css('display', 'block');
         getWikipedia(landmarkName);
         //////////////
@@ -80,7 +80,7 @@ function searchCard(event) {
       makeCarousel(results);
     });
 
-  // getYoutube(cardName);
+  getYoutube(cardName);
   $('figure').css('display', 'block');
   getWikipedia(cardName);
 }
@@ -102,7 +102,7 @@ function searchCard1(event) {
       makeCarousel(results);
     });
 
-  // getYoutube(cardName1);
+  getYoutube(cardName1);
   $('figure').css('display', 'block');
   getWikipedia(cardName1);
 }
@@ -123,7 +123,7 @@ function searchCard2(event) {
       makeCarousel(results);
     });
 
-  // getYoutube(cardName2);
+  getYoutube(cardName2);
   $('figure').css('display', 'block');
   getWikipedia(cardName2);
 }

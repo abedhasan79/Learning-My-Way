@@ -69,7 +69,7 @@ $('ul').on('click','.serchListCreated', function (e) {
             makeCarousel(results);
         });
 
-    // getYoutube(search);
+    getYoutube(search);
     $('figure').css('display','block');
     getWikipedia(search);
 });
