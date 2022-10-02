@@ -20,10 +20,11 @@ var splashApiKey = "vhzjXLz3kbF0cpvBjxXkR3zMRbAB2eYwP7qI5kxHndQ";
 var splashApiSecret = "aCQVXryiUwzsD6CuMJ-RjMNCmKNXB2zv6dmkLiW0-sc";
 
 //function to start once button clicked
+// which displayes the images wiki link and youtube videos on search
+
 function searchLandmark(event) {
   event.preventDefault();
-  //onclick hide the recommended lsit
-  // $("#sectionHeaders").css('display','none');
+  
   /////
   imgContainer.children().remove();
 
@@ -64,6 +65,7 @@ function searchLandmark(event) {
 
 }
 
+// recommended topic 1
 function searchCard(event) {
   event.preventDefault();
   imgContainer.children().remove();
@@ -85,6 +87,7 @@ function searchCard(event) {
   getWikipedia(cardName);
 }
 
+// recommended topic 2
 function searchCard1(event) {
   event.preventDefault();
   imgContainer.children().remove();
@@ -107,6 +110,7 @@ function searchCard1(event) {
   getWikipedia(cardName1);
 }
 
+//recommended topic 3
 function searchCard2(event) {
   event.preventDefault();
   imgContainer.children().remove();
@@ -179,7 +183,6 @@ function makeCarousel(imgData) {
   }
 }
 
-//credit uploader
 
 //search bar click function
 searchBtn.on("click", searchLandmark);
