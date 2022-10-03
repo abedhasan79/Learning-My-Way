@@ -1,52 +1,71 @@
 /* done by Abed H. */
 
-.card{
+.card {
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-right: 2vh;
     margin-left: 2vh;
 }
-.card:hover{
-    box-shadow: 0px 0px 10px rgb(255, 91, 167);
+
+.card:hover {
+    box-shadow: 0px 0px 50px rgb(255, 91, 167);
+    border-radius: 30px;
+    transition: 1s;
 }
-.card-body{
+.card img:hover{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 1s;
+}
+
+.card-body {
     text-align: center;
 }
 
-#historyContainer{
+#historyContainer {
     margin-top: 5vh;
 }
-#headHistory{
+
+#headHistory {
     text-align: center;
     color: white;
     margin-bottom: 3vh;
 }
-ul{
+
+ul {
     text-align: center;
 }
-ul li{
+
+ul li {
     margin-right: 2vh;
     margin-left: 2vh;
     margin-bottom: 2vh;
 }
 
 
-figure{
+figure {
     margin-right: 2vh;
     margin-left: 2vh;
 }
 
-.youTubeVideos{
+.youTubeVideos {
     margin-bottom: 10vh;
 }
 
-.error-msg{
-    color: rgb(95, 12, 12);
+.error-msg {
+    color: rgb(139, 27, 143);
     margin-top: 5vh;
     display: none;
+    animation: blinker 1s linear infinite;
 }
 
-#searchButton{
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#searchButton {
     padding-left: 4vh;
     padding-right: 4vh;
 }

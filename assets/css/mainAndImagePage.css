@@ -35,6 +35,8 @@ header {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Noto Sans Mono', monospace;
   font-family: 'Oswald', sans-serif;
+  transition-property:all;
+  transition-duration: 2s;
 }
 #infoBar:hover{
   color: #5f0899;
