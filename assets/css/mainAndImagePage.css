@@ -12,12 +12,15 @@ figure {
   border: 1px solid red;
   display: none;
 }
-body{
+
+body {
   background-color: var(--lightseablue);
 }
-header{
+
+header {
   background-color: var(--lightseablue);
 }
+
 #navbarNav {
   justify-content: end;
 }
@@ -26,27 +29,36 @@ header{
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  font-family: 'Courier New', Courier, monospace;
   color: rgb(168, 43, 101);
   font-size: 2vh;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Oswald', sans-serif;
+}
+#infoBar:hover{
+  color: #5f0899;
+  font-size: 2.5vh;
 }
 
-#searchbar{
+
+#searchbar {
   text-align: center;
   background-color: var(--seablue);
   margin-bottom: 5vh;
   padding-bottom: 5vh;
 }
 
-#bar{
+#bar {
   margin-top: 2vh;
   margin-bottom: 1vh;
   height: 5vh;
   padding-left: 5vh;
   padding-right: 5vh;
+  border-radius: 10px;
 }
 
-#headTopic h2{
-  text-align:  center;
+#headTopic h2 {
+  text-align: center;
   color: white;
 }

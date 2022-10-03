@@ -6,6 +6,9 @@
     margin-right: 2vh;
     margin-left: 2vh;
 }
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(255, 91, 167);
+}
 .card-body{
     text-align: center;
 }
@@ -41,4 +44,9 @@ figure{
     color: rgb(95, 12, 12);
     margin-top: 5vh;
     display: none;
+}
+
+#searchButton{
+    padding-left: 4vh;
+    padding-right: 4vh;
 }
