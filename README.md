@@ -2,18 +2,19 @@
 
 ## Description
 
-Learning My Way is a web application that can access any topic and pull up images, wiki info, and even videos. Being able to grab all these rescourses on anything you can think of can be helpful in many ways. This is because it allows the user to find useful information quicly, understand what they are loking for witha variety of images and get a feel for location, tutorials and more through youtube links. To complete this web application we used three API's; unsplash for imgs, youtube for videos, and wiki for any info you could need! A variety of web css was used, vanilia, bootstrap and bulma. Throughout this project, we got to learn and implement new pieces and got to further our ability to work within teams. Our motivation was to see if we could succesffuly implement these new tools and create a functional and efficiant web application.This app will solve issues for the regular curious cat, a student furthering their knowledge, or even a wise old man trying to learn something fresh!
+Learning My Way is a web application that can access any topic and pull up images, wiki info, and even videos. Being able to grab all these resources on anything you can think of can be helpful in many ways. This is because it allows the user to find useful information quickly, understand what they are looking for with a variety of images and get a feel for location, tutorials and more through youtube links. To complete this web application we used three API's; unsplash for imgs, youtube for videos, and wiki for any info you could need! A variety of web css was used, vanilia, bootstrap and bulma. Throughout this project, we got to learn and implement new pieces and got to further our ability to work within teams. Our motivation was to see if we could successfully implement these new tools and create a functional and efficient web application.This app will solve issues for the regular curious cat, a student furthering their knowledge, or even a wise old man trying to learn something fresh!
 
 ## Installation
 
 No installation requiried, just visit the Application link
 
 ## Application Link
+
 https://abedhasan79.github.io/Learning-My-Way/
 
 ## Screenshot of Application
-![Screenshot 2022-10-01 112842](https://user-images.githubusercontent.com/106339494/193416672-6a3785e7-fd50-490a-87bb-e0fda9cfcbb2.png)
 
+![Screenshot 2022-10-01 112842](https://user-images.githubusercontent.com/106339494/193416672-6a3785e7-fd50-490a-87bb-e0fda9cfcbb2.png)
 
 ## Credits
 
